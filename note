@@ -1,0 +1,38 @@
+server:	
+	each round: 
+	p1 name
+	p2 name
+	+bomb position 
+
+	each turn:
+	game.py --> p1went, p2went, bothwent, score, p1 score, p2 score
+	+click position p --> 36 position
+
+client: 
+	drawboard from bomb position
+
+tic-tac-toe
+grid.py
+server.py
+client.pyy
+client.but(O)
+server.but(x) --> press and show on both server and client
+
+if win(x ==3) print x wins --> app cant click/run (we want it to go back to wait player)
+
+do single mode first
+
+if pygame.mouse.get_pressed()[0] and not isoutofbounds:
+				print(mouse[0]//64 ,mouse[1]//64)
+				xGrid = mouse[0]//64
+				yGrid = mouse[1]//64
+				grid.get_mouse(xGrid,yGrid,player)
+				if grid.switch_player :
+					if player == 0:
+						player = 1
+					else:
+						player = 0
+					#xpos = int((mouse[0])/64.0)
+					#ypos = int((mouse[1])/64.0)
+					#boardh[ypos][xpos]=True
+				grid.print_grid()

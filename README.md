@@ -1,2 +1,3 @@
-# FindMyMineByPraew
-only part13 left
+# findmymine
+game 
+hello worldgit 
